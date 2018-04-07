@@ -4,7 +4,7 @@ Commands:
 
 +help         Displays the help message.            |    Usage: +help
 
-+pring        Pings the bot.                        |    Usage: +pring
++ping         Pings the bot.                        |    Usage: +ping
 
 +reload       Reloads a command                     |    Usage: +reload [command]
 
