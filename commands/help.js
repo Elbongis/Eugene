@@ -19,6 +19,10 @@ exports.run = (client, message, args) => {
         value: "*Pings the bot. | Usage: +pring*"
       },
       {
+        name:"+reload",
+        value: "Reloads a command | Usage: +reload [command]"
+      },
+      {
         name: "+asl",
         value: "*The bot asks you on a date. How cute. | Usage: +asl [age] [sex] [location]*"
       },

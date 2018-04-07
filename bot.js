@@ -1,5 +1,5 @@
 const Discord = require("discord.js"); //get discord.js
-const client = new Discord.Client(); //create client
+const client = new Discord.Client({autoReconnect:true}); //create client and auto reconnect if bot goes down
 const config = require("./config.json"); //get config
 const fs = require("fs"); //get fs
 
