@@ -1,6 +1,5 @@
 # Eugene
-Eugene Bot. Made mainly for use in UG Discord.
-
+Eugene Bot. Made for fun.
 Commands: 
 
 +help         Displays the help message.            |    Usage: +help
