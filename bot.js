@@ -32,6 +32,12 @@ client.on("message", message => {
     }
   }
 
+  if (message.content.includes("pippa" || "Pippa")) {
+    message.channel.send("", {
+      file: "https://scontent.flhr2-1.fna.fbcdn.net/v/t1.0-9/30653240_917833045058802_8470135567428878336_n.jpg?_nc_cat=0&oh=5b416414c7f2b7ff37cee95dade02771&oe=5B6B6A2E"
+    });
+  }
+
   //Removes the overwatch role
   if (message.content.startsWith("-overwatch")) {
     guildMember.removeRole('352501447897645056')
@@ -71,6 +77,7 @@ client.on("message", message => {
   if (message.content.indexOf(config.prefix) !==0) return;
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
+
   //Fetches command files from ./commands/
   try {
     let commandFile = require(`./commands/${command}.js`);
