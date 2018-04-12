@@ -32,9 +32,22 @@ client.on("message", message => {
     }
   }
 
-  if (message.content.includes("pippa" || "Pippa")) {
+  if (message.content.includes("pippa")) {
     message.channel.send("", {
-      file: "https://scontent.flhr2-1.fna.fbcdn.net/v/t1.0-9/30653240_917833045058802_8470135567428878336_n.jpg?_nc_cat=0&oh=5b416414c7f2b7ff37cee95dade02771&oe=5B6B6A2E"
+      "embed": {
+        "image": {
+        "url": "https://scontent.flhr2-1.fna.fbcdn.net/v/t1.0-9/30653240_917833045058802_8470135567428878336_n.jpg?_nc_cat=0&oh=5b416414c7f2b7ff37cee95dade02771&oe=5B6B6A2E",
+        }
+      }
+    });
+  }
+  if (message.content.includes("Pippa")) {
+    message.channel.send("", {
+      "embed": {
+        "image": {
+        "url": "https://scontent.flhr2-1.fna.fbcdn.net/v/t1.0-9/30653240_917833045058802_8470135567428878336_n.jpg?_nc_cat=0&oh=5b416414c7f2b7ff37cee95dade02771&oe=5B6B6A2E",
+        }
+      }
     });
   }
 
